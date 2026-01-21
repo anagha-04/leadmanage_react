@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 function Studentlist() {
-  const [studentName,setstudentName]= useState("")
-  const[qualification,setqualification]=useState("")
-  const[source,setsource]= useState("")
+  const [students,setstudents]= useState([])
+  
+
   return (
     <div>
 
