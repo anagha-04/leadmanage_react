@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 
 function Register() {
@@ -16,6 +17,9 @@ function Register() {
 
     const handleSubmit = async (e) =>{
         e.preventDefault();
+
+        const response = await axios.post("http://127.0.0.1:8000/register/",formdata)
+        console.log(response.data)
     }
   return (
     <div>
