@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Register() {
-    
+    const[formdata,setFormData] = useState({
+        "username":"",
+        "passwprd":"",
+        "email":""
+
+    })
+    const handleChange = (e) =>{
+        setFormData({
+            ...formdata,
+            [e.target.name]:e.target.value
+        })
+    }
   return (
     <div>
         <h2>Register</h2>
