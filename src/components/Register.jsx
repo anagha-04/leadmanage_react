@@ -24,7 +24,7 @@ function Register() {
   return (
     <div>
         <h2>Register</h2>
-        <form action="">
+        <form action="" onSubmit={handleSubmit}>
             <input type="text" name='username' placeholder='enter username'onChange={handleChange} />
             <br /><br />
             <input type="password" name='password' placeholder='enter password' onChange={handleChange}/>
