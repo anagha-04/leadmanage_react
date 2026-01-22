@@ -15,6 +15,13 @@ function Studentlist() {
 
         <h1>Studentlist</h1>
         <p>Total Length: {students.length}</p>
+        <ul>
+          {students.map((student) => (
+            <li key={student.id}>
+              {student.student_name} - {student.source} -{student.Qualification}
+            </li>
+          ))}
+        </ul>
     </div>
   )
 }
