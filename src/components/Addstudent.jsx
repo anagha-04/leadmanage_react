@@ -40,7 +40,7 @@ function Addstudent() {
             <form onSubmit={handleSubmit}>
                 <input placeholder='Student Name'
                     value={student_name}
-                    onChange={(e) => setStudent_name(e.target.value)}
+                    onChange={(e) => setStudentName(e.target.value)}
                 />
 
                 <input placeholder='Qualification'
