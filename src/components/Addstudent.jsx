@@ -18,6 +18,7 @@ function Addstudent() {
                 "Authorization": `Token ${token}`
             },
             body: JSON.stringfy({
+                student_name
 
             })
         })
