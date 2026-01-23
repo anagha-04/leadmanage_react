@@ -18,9 +18,19 @@ function Addstudent() {
                 "Authorization": `Token ${token}`
             },
             body: JSON.stringfy({
-                student_name
+                student_name,
+                Qualification,
+                source
 
             })
+        })
+        .then(res => res.json())
+        .then(data =>{
+            alert("student created successfully")
+            setStudentName("")
+            setQualification("")
+            setSource("friend")
+            
         })
     }
 
