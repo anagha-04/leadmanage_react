@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Studentlist from './components/Studentlist'
 import Register from './components/Register'
-import Login from './components/login'
+import Logins from './components/Logins'
 
 function App() {
   
@@ -14,7 +14,9 @@ function App() {
       <Studentlist> </Studentlist>
 
       {/* <Register></Register> */}
-      <Login></Login>
+
+      <Logins></Logins>
+     
       
     </>
   )

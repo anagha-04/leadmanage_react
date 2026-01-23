@@ -5,7 +5,17 @@ function Studentlist() {
 
 
   useEffect(()=>{
-     fetch("http://127.0.0.1:8000/add/").then((res) => res.json()).then((data)=> setstudents(data))
+     const token =localStorage.getItem("token")
+
+     if(!token){
+      console.error("no token found")
+      return
+     }
+     
+     fetch("http://127.0.0.1:8000/add/")
+     .then((res) => res.json())
+     .then((data)=> setstudents(data))
+     .catch((err) => console.error(err))
 
   },[])
 
